@@ -12,8 +12,8 @@
  *  var message = mySharedLibrary.myFunction();
  */
 
-exports.convertTime = function(time12h) {
-    //var convertTime = function(time12h) {
+//exports.convertTime = function(time12h) {
+    var convertTime = function(time12h) {
     var msg = 'Converting time';
     var time = time12h.split(' ');
     var hms = time[0];
@@ -30,8 +30,8 @@ exports.convertTime = function(time12h) {
     return hours + ':' + minutes;
   };
   
-    exports.form = function(type) {
-            //var form = function(type) {
+    //exports.form = function(type) {
+            var form = function(type) {
     console.log('Creating forms');
     if (type == "High-Warning") {
       result = constants.warningForm;
@@ -51,8 +51,8 @@ exports.convertTime = function(time12h) {
     return result;
   };
   
-    exports.path = function(type, form) {
-            //var path = function(type, form) {
+    //exports.path = function(type, form) {
+            var path = function(type, form) {
     console.log('Creating path');
     if (type == "High-Warning") {
       result = "/reapi/2015-04-01/forms/" + form + "/triggers";
